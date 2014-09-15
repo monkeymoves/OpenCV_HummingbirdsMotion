@@ -18,10 +18,10 @@ LicenseFile=C:\Users\Ben\Documents\OpenCV_HummingbirdsMotion\License.txt
 OutputBaseFilename=MotionMeerkatSetup
 Compression=lzma
 SolidCompression=yes
-                           
+                            
 [Languages]                                                                         
 Name: "english"; MessagesFile: "compiler:Default.isl"
-
+                  
 [Tasks]
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
          
@@ -29,16 +29,16 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Source: "C:\Users\Ben\Documents\OpenCV_HummingbirdsMotion\dist\*"; DestDir: "{app}"; Flags: recursesubdirs createallsubdirs
 Source: "C:\FFmpeg\bin\ffmpeg.exe";DestDir: "{app}\FFmpeg"; Flags: ignoreversion
 
-; NOTE: Don't use "Flags: ignoreversion" on any shared system files
+; NOTE: Don't use "Flags: ignoreversion" on any shared system files                          
          
 [Icons]
-Name: "{group}\MotionMeerkat"; Filename: "{app}\motion_dev.exe"; IconFileName: "{app}\thumbnail.ico"
-Name: "{commondesktop}\MotionMeerkat"; IconFileName: "{app}\thumbnail.ico"; Filename: "{app}\motion_dev.exe"; Tasks: desktopicon
+Name: "{group}\MotionMeerkat"; Filename: "{app}\motion_devCV2.exe"; IconFileName: "{app}\thumbnail.ico"
+Name: "{commondesktop}\MotionMeerkat"; IconFileName: "{app}\thumbnail.ico"; Filename: "{app}\motion_devCV2.exe"; Tasks: desktopicon
 
 [Registry]
 Root: HKLM; Subkey: "SYSTEM\CurrentControlSet\Control\Session Manager\Environment"; ValueType: expandsz; ValueName: "Path"; ValueData: "{olddata};{app}\FFmpeg";
 
 [Run]
-Filename: "{app}\motion_dev.exe"; Description: "{cm:LaunchProgram,MotionMeerkat}"; Flags: nowait postinstall skipifsilent
+Filename: "{app}\motion_devCV2.exe"; Description: "{cm:LaunchProgram,MotionMeerkat}"; Flags: nowait postinstall skipifsilent
 Filename: "https://github.com/bw4sz/OpenCV_HummingbirdsMotion/wiki"; Flags: shellexec runasoriginaluser postinstall; Description: "Open the Wiki."
              
